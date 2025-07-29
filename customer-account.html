@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - British Farm Co-op</title>
+    <link rel="stylesheet" href="css/styles.css?v=1032">
+    <link rel="stylesheet" href="css/customer.css?v=1003">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Account</h2>
+                    <p>Sign in to your existing account or create a new one to access personalized features.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="signup-section">
+            <div class="container">
+                <div class="signup-container">
+                    <div class="signup-form-container">
+                        <!-- Tab Navigation -->
+                        <div class="account-tabs">
+                            <button class="tab-btn active" data-tab="login">Sign In</button>
+                            <button class="tab-btn" data-tab="signup">Create Account</button>
+                        </div>
+
+                        <!-- Login Tab -->
+                        <div class="tab-content active" id="login-tab">
+                            <h3>Welcome Back</h3>
+                            <form id="customer-login-form" class="signup-form">
+                                <div class="form-section">
+                                    <div class="form-group">
+                                        <label for="login-email">Email Address</label>
+                                        <input type="email" id="login-email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="login-password">Password</label>
+                                        <input type="password" id="login-password" name="password" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary">Sign In</button>
+                                    <p class="forgot-password"><a href="#" onclick="showForgotPassword()">Forgot your password?</a></p>
+                                </div>
+                            </form>
+                            
+                            <div class="admin-login-info">
+                                <p><strong>Admin Access:</strong> Use admin@britishfarm.co.uk / admin123</p>
+                            </div>
+                        </div>
+
+                        <!-- Signup Tab -->
+                        <div class="tab-content" id="signup-tab">
+                            <h3>Create Your Account</h3>
+                            <form id="customer-signup-form" class="signup-form">
+                                <!-- Personal Information -->
+                                <div class="form-section">
+                                    <h4>Personal Information</h4>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="first-name">First Name *</label>
+                                            <input type="text" id="first-name" name="firstName" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="last-name">Last Name *</label>
+                                            <input type="text" id="last-name" name="lastName" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="signup-email">Email Address *</label>
+                                        <input type="email" id="signup-email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="signup-password">Password *</label>
+                                        <input type="password" id="signup-password" name="password" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="confirm-password">Confirm Password *</label>
+                                        <input type="password" id="confirm-password" name="confirmPassword" required>
+                                    </div>
+                                </div>
+
+                                <!-- Delivery Address -->
+                                <div class="form-section">
+                                    <h4>Delivery Address</h4>
+                                    <div class="form-group">
+                                        <label for="address-line1">Address Line 1 *</label>
+                                        <input type="text" id="address-line1" name="addressLine1" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address-line2">Address Line 2</label>
+                                        <input type="text" id="address-line2" name="addressLine2">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="city">City *</label>
+                                            <input type="text" id="city" name="city" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="postcode">Postcode *</label>
+                                            <input type="text" id="postcode" name="postcode" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="county">County</label>
+                                        <input type="text" id="county" name="county">
+                                    </div>
+                                </div>
+
+                                <!-- Preferences -->
+                                <div class="form-section">
+                                    <h4>Preferences</h4>
+                                    <div class="form-group">
+                                        <label for="delivery-preferences">Delivery Preferences</label>
+                                        <select id="delivery-preferences" name="deliveryPreferences">
+                                            <option value="any">Any delivery option</option>
+                                            <option value="collection">Collection only</option>
+                                            <option value="delivery">Delivery only</option>
+                                            <option value="both">Both collection and delivery</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="favorite-farms">Favorite Farms (optional)</label>
+                                        <select id="favorite-farms" name="favoriteFarms" multiple>
+                                            <option value="devon">Devon Valley Farm</option>
+                                            <option value="kent">Kent Apple Orchard</option>
+                                            <option value="yorkshire">Yorkshire Beef Farm</option>
+                                            <option value="cornwall">Cornwall Vegetable Farm</option>
+                                            <option value="scottish">Scottish Highland Farm</option>
+                                            <option value="welsh">Welsh Mountain Farm</option>
+                                            <option value="norfolk">Norfolk Broads Farm</option>
+                                            <option value="cumbria">Cumbria Dairy Farm</option>
+                                            <option value="somerset">Somerset Cider Farm</option>
+                                            <option value="herefordshire">Herefordshire Beef Farm</option>
+                                            <option value="sussex">Sussex Apple Farm</option>
+                                            <option value="lancashire">Lancashire Dairy Farm</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Notification Settings -->
+                                <div class="form-section">
+                                    <h4>Notification Settings</h4>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="notifications" value="seasonal" checked>
+                                            <span class="checkmark"></span>
+                                            Seasonal product notifications
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="notifications" value="restock" checked>
+                                            <span class="checkmark"></span>
+                                            Product restock notifications
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="notifications" value="new-products">
+                                            <span class="checkmark"></span>
+                                            New product announcements
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="notifications" value="farm-updates">
+                                            <span class="checkmark"></span>
+                                            Farm updates and news
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" name="notifications" value="promotions">
+                                            <span class="checkmark"></span>
+                                            Special offers and promotions
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Terms and Conditions -->
+                                <div class="form-section">
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" id="terms" name="terms" required>
+                                            <span class="checkmark"></span>
+                                            I agree to the <a href="#" target="_blank">Terms and Conditions</a> *
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" id="privacy" name="privacy" required>
+                                            <span class="checkmark"></span>
+                                            I agree to the <a href="#" target="_blank">Privacy Policy</a> *
+                                        </label>
+                                        <label class="checkbox-option">
+                                            <input type="checkbox" id="marketing" name="marketing">
+                                            <span class="checkmark"></span>
+                                            I would like to receive marketing communications
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary">Create Account</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="signup-benefits">
+                        <h3>Benefits of Having an Account</h3>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🛒</div>
+                            <div class="benefit-content">
+                                <h4>Personalized Shopping</h4>
+                                <p>Save your delivery addresses and payment methods for quick checkout.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">❤️</div>
+                            <div class="benefit-content">
+                                <h4>Wishlist & Favorites</h4>
+                                <p>Create wishlists and save your favorite products for later.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🔔</div>
+                            <div class="benefit-content">
+                                <h4>Smart Notifications</h4>
+                                <p>Get notified when seasonal products are available or items are back in stock.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">📊</div>
+                            <div class="benefit-content">
+                                <h4>Order History</h4>
+                                <p>Track your orders and reorder your favorite products easily.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🏆</div>
+                            <div class="benefit-content">
+                                <h4>Loyalty Rewards</h4>
+                                <p>Earn points on every purchase and unlock exclusive benefits.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Forgot Password Modal -->
+    <div id="forgot-password-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Reset Password</h3>
+                <button class="modal-close" onclick="closeModal('forgot-password-modal')">&times;</button>
+            </div>
+            <form id="forgot-password-form" class="profile-form">
+                <div class="form-group">
+                    <label for="reset-email">Email Address</label>
+                    <input type="email" id="reset-email" name="email" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Send Reset Link</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('forgot-password-modal')">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="site-footer"></div>
+
+    <script src="js/utils.js?v=1001"></script>
+    <script src="js/validation.js?v=1002"></script>
+    <script src="js/messaging.js?v=1002"></script>
+    <script src="js/data.js?v=1002"></script>
+    <script src="js/product-display.js?v=1002"></script>
+    <script src="js/customer-account.js?v=1002"></script>
+    <script src="js/template-loader.js?v=1010"></script>
+</body>
+</html> 

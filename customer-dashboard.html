@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard - British Farm Co-op</title>
+    <link rel="stylesheet" href="css/styles.css?v=1022">
+    <link rel="stylesheet" href="css/customer.css?v=1001">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <main>
+        <section class="customer-dashboard">
+            <div class="container">
+                <!-- Dashboard Header -->
+                <div class="dashboard-header">
+                    <div class="dashboard-header-top">
+                        <div class="welcome-section">
+                            <h2>Welcome back, <span id="customer-name">Customer</span>!</h2>
+                            <p>Manage your account, view your wishlist, and track your orders.</p>
+                        </div>
+                        <div class="logout-section">
+                            <button class="btn btn-secondary logout-btn" onclick="logout()">
+                                <span class="logout-icon">🚪</span>
+                                Logout
+                            </button>
+                        </div>
+                    </div>
+                    <div class="dashboard-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="loyalty-points">0</span>
+                            <span class="stat-label">Loyalty Points</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="wishlist-count">0</span>
+                            <span class="stat-label">Wishlist Items</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="order-count">0</span>
+                            <span class="stat-label">Orders</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard Grid -->
+                <div class="dashboard-grid">
+                    <!-- Profile Section -->
+                    <div class="dashboard-card">
+                        <h3>Profile Information</h3>
+                        <div class="profile-info">
+                            <p><strong>Name:</strong> <span id="profile-name">Loading...</span></p>
+                            <p><strong>Email:</strong> <span id="profile-email">Loading...</span></p>
+                            <p><strong>Phone:</strong> <span id="profile-phone">Loading...</span></p>
+                            <p><strong>Member since:</strong> <span id="profile-date">Loading...</span></p>
+                        </div>
+                        <button class="btn btn-primary" onclick="editProfile()">Edit Profile</button>
+                    </div>
+
+                    <!-- Address Section -->
+                    <div class="dashboard-card">
+                        <h3>Delivery Address</h3>
+                        <div class="address-info" id="address-info">
+                            <p>Loading address...</p>
+                        </div>
+                        <button class="btn btn-secondary" onclick="editAddress()">Edit Address</button>
+                    </div>
+
+                    <!-- Preferences Section -->
+                    <div class="dashboard-card">
+                        <h3>Preferences</h3>
+                        <div class="preferences-info">
+                            <p><strong>Delivery Preference:</strong> <span id="delivery-preference">Loading...</span></p>
+                            <p><strong>Favorite Farms:</strong> <span id="favorite-farms">Loading...</span></p>
+                        </div>
+                        <button class="btn btn-secondary" onclick="editPreferences()">Edit Preferences</button>
+                    </div>
+
+                    <!-- Notifications Section -->
+                    <div class="dashboard-card">
+                        <h3>Notification Settings</h3>
+                        <div class="notification-settings" id="notification-settings">
+                            <p>Loading notification settings...</p>
+                        </div>
+                        <button class="btn btn-secondary" onclick="editNotifications()">Edit Notifications</button>
+                    </div>
+                </div>
+
+                <!-- Wishlist Section -->
+                <div class="dashboard-card full-width">
+                    <h3>My Wishlist</h3>
+                    <div id="wishlist-container">
+                        <div class="loading-state">
+                            <p>Loading wishlist...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order History Section -->
+                <div class="dashboard-card full-width">
+                    <h3>Order History</h3>
+                    <div id="order-history-container">
+                        <div class="loading-state">
+                            <p>Loading order history...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Notifications Section -->
+                <div class="dashboard-card full-width">
+                    <h3>Recent Notifications</h3>
+                    <div id="notifications-container">
+                        <div class="loading-state">
+                            <p>Loading notifications...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Profile Edit Modal -->
+    <div id="profile-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Edit Profile</h3>
+                <button class="modal-close" onclick="closeModal('profile-modal')">&times;</button>
+            </div>
+            <form id="profile-form" class="profile-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="edit-first-name">First Name</label>
+                        <input type="text" id="edit-first-name" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-last-name">Last Name</label>
+                        <input type="text" id="edit-last-name" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="edit-email">Email Address</label>
+                    <input type="email" id="edit-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-phone">Phone Number</label>
+                    <input type="tel" id="edit-phone" name="phone">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('profile-modal')">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Address Edit Modal -->
+    <div id="address-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Edit Address</h3>
+                <button class="modal-close" onclick="closeModal('address-modal')">&times;</button>
+            </div>
+            <form id="address-form" class="profile-form">
+                <div class="form-group">
+                    <label for="edit-address-line1">Address Line 1</label>
+                    <input type="text" id="edit-address-line1" name="addressLine1" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-address-line2">Address Line 2</label>
+                    <input type="text" id="edit-address-line2" name="addressLine2">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="edit-city">City</label>
+                        <input type="text" id="edit-city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-postcode">Postcode</label>
+                        <input type="text" id="edit-postcode" name="postcode" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="edit-county">County</label>
+                    <input type="text" id="edit-county" name="county">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('address-modal')">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Preferences Edit Modal -->
+    <div id="preferences-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Edit Preferences</h3>
+                <button class="modal-close" onclick="closeModal('preferences-modal')">&times;</button>
+            </div>
+            <form id="preferences-form" class="profile-form">
+                <div class="form-group">
+                    <label for="edit-delivery-preferences">Delivery Preferences</label>
+                    <select id="edit-delivery-preferences" name="deliveryPreferences">
+                        <option value="any">Any delivery option</option>
+                        <option value="collection">Collection only</option>
+                        <option value="delivery">Delivery only</option>
+                        <option value="both">Both collection and delivery</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="edit-favorite-farms">Favorite Farms</label>
+                    <select id="edit-favorite-farms" name="favoriteFarms" multiple>
+                        <option value="devon">Devon Valley Farm</option>
+                        <option value="kent">Kent Apple Orchard</option>
+                        <option value="yorkshire">Yorkshire Beef Farm</option>
+                        <option value="cornwall">Cornwall Vegetable Farm</option>
+                        <option value="scottish">Scottish Highland Farm</option>
+                        <option value="welsh">Welsh Mountain Farm</option>
+                        <option value="norfolk">Norfolk Broads Farm</option>
+                        <option value="cumbria">Cumbria Dairy Farm</option>
+                        <option value="somerset">Somerset Cider Farm</option>
+                        <option value="herefordshire">Herefordshire Beef Farm</option>
+                        <option value="sussex">Sussex Apple Farm</option>
+                        <option value="lancashire">Lancashire Dairy Farm</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('preferences-modal')">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notifications Edit Modal -->
+    <div id="notifications-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Edit Notification Settings</h3>
+                <button class="modal-close" onclick="closeModal('notifications-modal')">&times;</button>
+            </div>
+            <form id="notifications-form" class="profile-form">
+                <div class="checkbox-group">
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="notifications" value="seasonal">
+                        <span class="checkmark"></span>
+                        Seasonal product notifications
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="notifications" value="restock">
+                        <span class="checkmark"></span>
+                        Product restock notifications
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="notifications" value="new-products">
+                        <span class="checkmark"></span>
+                        New product announcements
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="notifications" value="farm-updates">
+                        <span class="checkmark"></span>
+                        Farm updates and news
+                    </label>
+                    <label class="checkbox-option">
+                        <input type="checkbox" name="notifications" value="promotions">
+                        <span class="checkmark"></span>
+                        Special offers and promotions
+                    </label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeModal('notifications-modal')">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="site-footer"></div>
+
+    <script src="js/utils.js?v=1001"></script>
+    <script src="js/validation.js?v=1002"></script>
+    <script src="js/messaging.js?v=1002"></script>
+    <script src="js/data.js?v=1002"></script>
+    <script src="js/product-display.js?v=1002"></script>
+    <script src="js/customer-dashboard.js?v=1002"></script>
+    <script src="js/template-loader.js?v=1015"></script>
+</body>
+</html> 

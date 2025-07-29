@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Co-op - British Farm Co-op</title>
+    <link rel="stylesheet" href="css/styles.css?v=1022">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Join Our British Farm Co-op</h2>
+                    <p>Become part of our community of traditional UK farmers and share your produce with customers nationwide</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="signup-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Farm Registration</h2>
+                    <p>Join our cooperative and start selling your traditional British farm products</p>
+                </div>
+
+                <div class="signup-content">
+                    <div class="signup-info">
+                        <h3>Why Join Our Co-op?</h3>
+                        <div class="benefits">
+                            <div class="benefit">
+                                <span class="benefit-icon">🌾</span>
+                                <h4>Reach More Customers</h4>
+                                <p>Connect with customers across the UK who value traditional British produce</p>
+                            </div>
+                            <div class="benefit">
+                                <span class="benefit-icon">🤝</span>
+                                <h4>Community Support</h4>
+                                <p>Join a network of like-minded farmers committed to sustainable practices</p>
+                            </div>
+                            <div class="benefit">
+                                <span class="benefit-icon">📈</span>
+                                <h4>Grow Your Business</h4>
+                                <p>Access our online platform and marketing support to expand your reach</p>
+                            </div>
+                            <div class="benefit">
+                                <span class="benefit-icon">🏆</span>
+                                <h4>Quality Standards</h4>
+                                <p>Maintain high standards while preserving traditional British farming methods</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="signup-form-container">
+                        <form id="farm-signup-form" class="signup-form">
+                            <h3>Farm Details</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="farm-name">Farm Name *</label>
+                                    <input type="text" id="farm-name" name="farm-name" required>
+                                    <span class="error-message" id="farm-name-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="farmer-name">Farmer Name *</label>
+                                    <input type="text" id="farmer-name" name="farmer-name" required>
+                                    <span class="error-message" id="farmer-name-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <span class="error-message" id="email-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                    <span class="error-message" id="phone-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="farm-address">Farm Address *</label>
+                                <textarea id="farm-address" name="farm-address" rows="3" required></textarea>
+                                <span class="error-message" id="farm-address-error"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="farm-type">Farm Type *</label>
+                                    <select id="farm-type" name="farm-type" required>
+                                        <option value="">Select Farm Type</option>
+                                        <option value="Mixed Farm">Mixed Farm</option>
+                                        <option value="Dairy Farm">Dairy Farm</option>
+                                        <option value="Arable Farm">Arable Farm</option>
+                                        <option value="Livestock Farm">Livestock Farm</option>
+                                        <option value="Market Garden">Market Garden</option>
+                                        <option value="Orchard">Orchard</option>
+                                        <option value="Vineyard">Vineyard</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <span class="error-message" id="farm-type-error"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="farm-size">Farm Size (acres) *</label>
+                                    <input type="number" id="farm-size" name="farm-size" min="1" required>
+                                    <span class="error-message" id="farm-size-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="products">Main Products *</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="products" value="Vegetables"> Vegetables
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="products" value="Fruits"> Fruits
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="products" value="Dairy"> Dairy
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="products" value="Meats"> Meats
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="products" value="Grains"> Grains
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="products" value="Honey"> Honey
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="products" value="Eggs"> Eggs
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="products" value="Beverages"> Beverages
+                                    </label>
+                                </div>
+                                <span class="error-message" id="products-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="certifications">Certifications</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="certifications" value="Organic"> Organic Certified
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="certifications" value="Red Tractor"> Red Tractor
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="certifications" value="Soil Association"> Soil Association
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="certifications" value="None"> None
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="farm-description">Farm Description *</label>
+                                <textarea id="farm-description" name="farm-description" rows="4" placeholder="Tell us about your farm, its history, and your farming practices..." required></textarea>
+                                <span class="error-message" id="farm-description-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="farm-photo">Farm Photo URL</label>
+                                <input type="url" id="farm-photo" name="farm-photo" placeholder="https://example.com/farm-photo.jpg">
+                                <span class="error-message" id="farm-photo-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    I agree to the <a href="#terms" class="link">Terms and Conditions</a> and <a href="#privacy" class="link">Privacy Policy</a> *
+                                </label>
+                                <span class="error-message" id="terms-error"></span>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Submit Application</button>
+                                <button type="button" class="btn btn-secondary" id="clear-form">Clear Form</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Questions About Joining?</h3>
+                        <p>Get in touch with our team for more information about joining the British Farm Co-op.</p>
+                        <div class="contact-details">
+                            <p><strong>Email:</strong> join@britishfarmcoop.co.uk</p>
+                            <p><strong>Phone:</strong> 020 7946 0958</p>
+                            <p><strong>Address:</strong> British Farm Co-op, London, UK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <!-- Success/Error Messages -->
+    <div id="message-container" class="message-container"></div>
+
+    <script src="js/utils.js?v=1001"></script>
+    <script src="js/validation.js?v=1002"></script>
+    <script src="js/messaging.js?v=1002"></script>
+    <script src="js/data.js?v=1002"></script>
+    <script src="js/product-display.js?v=1002"></script>
+    <script src="js/farm-signup.js?v=1002"></script>
+    <script src="js/template-loader.js?v=1011"></script>
+</body>
+</html> 

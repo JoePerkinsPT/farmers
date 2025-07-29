@@ -1,0 +1,279 @@
+/* Farm Details Page Styles */
+
+.farm-hero {
+    background: linear-gradient(135deg, #1A3C34 0%, #2d5a4f 100%);
+    color: white;
+    padding: 4rem 0;
+}
+
+.farm-hero-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.farm-image {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.farm-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.farm-hero-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.farm-location {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.farm-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.farm-tag {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.farm-details {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.farm-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.farm-main h2 {
+    color: #1A3C34;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.farm-description {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.farm-description p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.farm-products {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.product-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.product-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    color: #1A3C34;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.product-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.farm-categories {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #e8f5e8;
+    color: #2e7d32;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.category-icon {
+    font-size: 1.1rem;
+}
+
+.farm-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.farm-info-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.farm-info-card h3 {
+    color: #1A3C34;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-item strong {
+    color: #1A3C34;
+    font-weight: 600;
+}
+
+.info-item span {
+    color: #666;
+}
+
+.farm-actions {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.farm-actions h3 {
+    color: #1A3C34;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.farm-actions .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.farm-actions .btn:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .farm-hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .farm-hero-info h1 {
+        font-size: 2rem;
+    }
+    
+    .farm-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    .categories-list {
+        flex-direction: column;
+    }
+    
+    .info-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .farm-hero {
+        padding: 2rem 0;
+    }
+    
+    .farm-details {
+        padding: 2rem 0;
+    }
+    
+    .farm-hero-info h1 {
+        font-size: 1.8rem;
+    }
+    
+    .farm-description,
+    .farm-products,
+    .farm-categories,
+    .farm-info-card,
+    .farm-actions {
+        padding: 1.5rem;
+    }
+} 

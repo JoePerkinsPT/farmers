@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Details - British Farm Co-op</title>
+    <link rel="stylesheet" href="css/styles.css?v=1022">
+    <link rel="stylesheet" href="css/farm-details.css?v=1001">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <main>
+        <section class="farm-hero">
+            <div class="container">
+                <div class="farm-hero-content">
+                    <div class="farm-image">
+                        <img id="farm-image" src="assets/images/farm-placeholder.jpg" alt="Farm Image">
+                    </div>
+                    <div class="farm-hero-info">
+                        <h1 id="farm-name">Loading Farm...</h1>
+                        <p id="farm-location" class="farm-location">📍 Location: Loading...</p>
+                        <div class="farm-tags" id="farm-tags">
+                            <!-- Tags will be loaded dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="farm-details">
+            <div class="container">
+                <div class="farm-content">
+                    <div class="farm-main">
+                        <div class="farm-description">
+                            <h2>About This Farm</h2>
+                            <p id="farm-description">Loading farm description...</p>
+                        </div>
+                        
+                        <div class="farm-products">
+                            <h2>Available Products</h2>
+                            <div class="products-grid" id="products-grid">
+                                <!-- Products will be loaded dynamically -->
+                            </div>
+                        </div>
+                        
+                        <div class="farm-categories">
+                            <h2>Farm Categories</h2>
+                            <div class="categories-list" id="categories-list">
+                                <!-- Categories will be loaded dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="farm-sidebar">
+                        <div class="farm-info-card">
+                            <h3>Farm Information</h3>
+                            <div class="info-item">
+                                <strong>📍 Address:</strong>
+                                <span id="farm-address">Loading...</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>🌾 Farm Type:</strong>
+                                <span id="farm-type">Loading...</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>📅 Established:</strong>
+                                <span id="farm-established">Loading...</span>
+                            </div>
+                        </div>
+                        
+                        <div class="farm-actions">
+                            <h3>Actions</h3>
+                            <button class="btn btn-primary" onclick="contactFarm()">
+                                📞 Contact Farm
+                            </button>
+                            <button class="btn btn-secondary" onclick="viewOnMap()">
+                                🗺️ View on Map
+                            </button>
+                            <button class="btn btn-secondary" onclick="shopFarmProducts()">
+                                🛒 Shop Products
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="js/utils.js?v=1001"></script>
+    <script src="js/validation.js?v=1002"></script>
+    <script src="js/messaging.js?v=1002"></script>
+    <script src="js/data.js?v=1002"></script>
+    <script src="js/product-display.js?v=1002"></script>
+    <script src="js/template-loader.js?v=1014"></script>
+    <script src="js/farm-details.js?v=1002"></script>
+</body>
+</html> 

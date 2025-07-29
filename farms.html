@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Our Farms - British Farm Co-op</title>
+    <link rel="stylesheet" href="css/styles.css?v=1032">
+    <link rel="stylesheet" href="css/farms.css?v=1002">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Meet Our British Farms</h2>
+                    <p>Discover the stories behind our traditional UK farms and their exceptional products. Explore our interactive map to find farms near you.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="farms-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Farm Partners</h2>
+                    <p>Each farm brings unique traditions and specialties to our cooperative</p>
+                </div>
+
+                <div class="farms-carousel">
+                    <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous farms">
+                        <span>‹</span>
+                    </button>
+                    
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carouselTrack">
+                            <!-- Farms will be loaded dynamically from JSON -->
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn next-btn" id="nextBtn" aria-label="Next farms">
+                        <span>›</span>
+                    </button>
+                    
+                    <div class="carousel-dots" id="carouselDots">
+                        <!-- Dots will be generated dynamically -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="farm-features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Discover Our Farm Network</h2>
+                    <p>Explore our diverse network of traditional British farms across the UK</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card" onclick="showFeaturePopup('Traditional Farming', 'Diddly Squat Farm Shop')" style="cursor: pointer;">
+                        <div class="feature-icon">🌾</div>
+                        <h3>Traditional Farming</h3>
+                        <p>Our farms use time-honored British farming methods passed down through generations.</p>
+                    </div>
+                    
+                    <div class="feature-card" onclick="showFeaturePopup('Sustainable Practices', 'Daylesford Organic')" style="cursor: pointer;">
+                        <div class="feature-icon">🌱</div>
+                        <h3>Sustainable Practices</h3>
+                        <p>All our farms prioritize environmental stewardship and sustainable agriculture.</p>
+                    </div>
+                    
+                    <div class="feature-card" onclick="showFeaturePopup('Quality Assured', 'Chatsworth Estate Farm Shop')" style="cursor: pointer;">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Quality Assured</h3>
+                        <p>Every farm meets our strict quality standards for traditional British produce.</p>
+                    </div>
+                    
+                    <div class="feature-card" onclick="showFeaturePopup('Community Focused', 'Murton Farm Shop')" style="cursor: pointer;">
+                        <div class="feature-icon">🤝</div>
+                        <h3>Community Focused</h3>
+                        <p>Supporting local communities and preserving British farming heritage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="farm-map" class="map-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Find Our British Farms</h2>
+                    <p>Locate our partner farms across the UK and discover traditional British produce</p>
+                </div>
+                
+                <div class="map-container">
+                    <div id="map" class="farm-map"></div>
+                    <div class="map-controls">
+                        <div class="map-filters">
+                            <div class="map-search">
+                                <label for="farm-search">Search Farms:</label>
+                                <input type="text" id="farm-search" placeholder="Search by farm name, product, or description..." class="search-input">
+                            </div>
+                            <div class="map-category-filter">
+                                <label for="map-category-filter">Filter by Category:</label>
+                                <select id="map-category-filter" class="filter-select">
+                                    <option value="all">All Categories</option>
+                                    <option value="Fruits">Fruits</option>
+                                    <option value="Vegetables">Vegetables</option>
+                                    <option value="Dairy">Dairy</option>
+                                    <option value="Meats">Meats</option>
+                                    <option value="Grains">Grains</option>
+                                    <option value="Honey">Honey</option>
+                                    <option value="Eggs">Eggs</option>
+                                    <option value="Beverages">Beverages</option>
+                                    <option value="Preserves">Preserves</option>
+                                    <option value="Bakery">Bakery</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="map-location-controls">
+                            <button id="find-near-me" class="btn btn-secondary">
+                                <span>📍</span> Find Farms Near Me
+                            </button>
+                        </div>
+                        <div class="map-info">
+                            <p>Click on farm markers to see available produce</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="js/utils.js?v=1001"></script>
+    <script src="js/validation.js?v=1002"></script>
+    <script src="js/messaging.js?v=1002"></script>
+    <script src="js/data.js?v=1002"></script>
+    <script src="js/product-display.js?v=1002"></script>
+    <script src="js/farms.js?v=1006"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/map.js?v=1007"></script>
+    <script src="js/template-loader.js?v=1009"></script>
+</body>
+</html> 

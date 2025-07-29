@@ -1,0 +1,958 @@
+[
+  {
+    "id": 1,
+    "name": "Diddly Squat Farm Shop",
+    "location": "Chipping Norton, Oxfordshire OX7 5AB",
+    "description": "Diddly Squat Farm Shop, operated by the Clarkson family, is a renowned family-run farm in Oxfordshire. Committed to sustainable agriculture, it offers a delightful range of organic vegetables, fresh eggs, local honey, and premium meats, all sourced from their own fields and livestock.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Diddly_Squat_Farm.jpg/400px-Diddly_Squat_Farm.jpg?20191007105847",
+    "specialties": [
+      "Organic Vegetables",
+      "Fresh Eggs",
+      "Local Honey",
+      "Local Meats"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Murton Farm Shop",
+    "location": "Murton, Swansea, Wales SA3 3AR",
+    "description": "Located in the heart of the Gower Peninsula, Murton Farm Shop is a family-run business with over 150 years of market gardening heritage. It offers freshly grown vegetables, fruits, free-range eggs, and local Welsh produce, emphasizing quality and sustainability.",
+    "image": "https://www.murtonfarmshop.co.uk/wp-content/uploads/2018/09/IMG_3955.jpg",
+    "specialties": [
+      "Seasonal Vegetables",
+      "Local Dairy",
+      "Fresh Bread",
+      "Free-Range Eggs"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Gower Salt Marsh Lamb",
+    "location": "Llanrhidian, Swansea, Wales SA3 1HB",
+    "description": "Situated on the scenic Gower Peninsula, this traditional Welsh farm specializes in award-winning salt marsh and mountain lamb, renowned for its unique flavor from coastal grasslands rich in samphire and sea lavender. The farm also produces exquisite local honey.",
+    "image": "https://scontent-man2-1.xx.fbcdn.net/v/t39.30808-6/493510393_1231226242345500_402203267811806705_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=zpUUfkgb8OoQ7kNvwFEP1Or&_nc_oc=AdmEqRTCJwzrIUrRDdKVSnb8TB107Y6sQkscY2If7862S60XqipLjoNBJu0hahdfWh4&_nc_zt=23&_nc_ht=scontent-man2-1.xx&_nc_gid=xVfwjXDW0xKsWVCNqgLRwg&oh=00_AfSi_mFAoUL9zUo0JuZBx3TrgVYrK40uGP_oId_VNcmD7Q&oe=687ABE22",
+    "specialties": [
+      "Gower Salt Marsh Lamb",
+      "Welsh Mountain Lamb",
+      "Local Honey"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Forage Farm Shop",
+    "location": "Cowbridge, Vale of Glamorgan CF71 7FF",
+    "description": "Located on Penllyn Estate, Forage Farm Shop has been farmed by the Homfray family since 1846. Today, the farm grows feed wheat, oil seed rape, maize and vegetables, alongside a livestock operation focusing on rearing cattle, sheep and pigs, as well as free-range chickens. The farm shop sells fully traceable, seasonal and local produce wherever possible – including from the estate.",
+    "image": "https://foodvale.org/wp-content/uploads/2020/10/Forage.jpg",
+    "specialties": [
+      "Seasonal Vegetables",
+      "Local Honey",
+      "Artisan Bread",
+      "Local Dairy",
+      "Native Breed Aberdeen Angus Beef",
+      "Welsh-Breed Pork"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Rhug Estate",
+    "location": "Corwen, Denbighshire",
+    "description": "After taking over Rhug Estate farm in 1998 following the death of his father, Lord Newborough has grown the Rhug into one of the largest organic farms in the UK, and a true icon of field-to-fork food. Set within 12,500 acres, the estate continues to innovate, including pushing for higher standards of sustainability with the adoption of green energy, compostable and recyclable packaging and low food miles in recent years.",
+    "image": "https://venues.theextramile.guide/uploads/image_cache/img-69d1fac994488a9bde5d84394b528a82.jpg",
+    "specialties": [
+      "Organic Beef",
+      "Organic Lamb",
+      "Organic Chicken",
+      "Organic Pork",
+      "Organic Turkey",
+      "Organic Goose",
+      "Welsh Salt Marsh Sheep",
+      "Welsh Inland Sheep"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Hawarden Estate Farm Shop",
+    "location": "Flintshire",
+    "description": "Based on the edge of North Wales near Chester, Hawarden Estate has historic roots, with iron age origins, and an 18th century castle once home to four-time prime minister William Gladstone. The first farm shop on the site opened 18 years ago, and has since grown into a thriving business with attached café and bakery, where they make all their loaves and cakes in house each and every day.",
+    "image": "https://venues.theextramile.guide/uploads/image_cache/img-4debe3d0671ab772eb753424e7755831.jpg",
+    "specialties": [
+      "In-House Sourdough",
+      "Home-Baked Bread",
+      "Local Food",
+      "Homeware Products"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Beacons Farm Shop",
+    "location": "Brecon, Powys",
+    "description": "Located at the Welsh Venison Centre, Beacons Farm Shop was established in 1985 by the Morgan family. Based in the Brecon Beacons National Park, the shop is now run by husband and wife Andrew and Elaine Morgan, who sell high-quality, fresh meat from their own farm.",
+    "image": "https://visitcrickhowell.wales/application/files/6715/6863/4158/CRiC_venison.jpg",
+    "specialties": [
+      "Venison",
+      "Beef",
+      "Lamb",
+      "Pork",
+      "Bacon",
+      "Poultry",
+      "Seasonal Game",
+      "Welsh Fillet Steak"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Gate 2 Plate Farm Shop",
+    "location": "Lower Freystrop, Haverfordwest",
+    "description": "Since opening in 2007 just two miles from the family run farm, Gate 2 Plate has become a go-to destination for quality, home-reared beef, rare breed pork, Pembrokeshire potatoes and seasonal vegetables. On the farm, the family traditionally rear beef cattle, which is expertly hung for weeks to provide a fantastic flavour and tenderness.",
+    "image": "https://static.premiersite.co.uk/30320/img/30320_1232928.jpg",
+    "specialties": [
+      "Home-Reared Beef",
+      "Rare Breed Pork",
+      "Pembrokeshire Potatoes",
+      "Seasonal Vegetables",
+      "Homemade Sausages",
+      "Local Produce"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Lewis's Farm Shop",
+    "location": "Eyton, Wrexham",
+    "description": "Award-winning Lewis's Farm Shop in Eyton near Wrexham, was established in 2006 by Mark and Jayne Lewis, and prides itself on offering top-quality produce with a 'hearty welcome'. In its early days, the shop only sold fresh lamb from the farm, but as demand for local produce skyrocketed, the business expanded.",
+    "image": "https://www.lewisfarmshop.com/images/lewiss-farm-shop.png",
+    "specialties": [
+      "Fresh Lamb",
+      "Seasonal Vegetables",
+      "Preserves",
+      "Condiments",
+      "Local Meat",
+      "Homemade Pies",
+      "Welsh and English Cheeses"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Square Farm Shop",
+    "location": "Monmouth, Gwent",
+    "description": "Focusing on traditional farming methods, Square Farm Shop is a family-run business known for its home-grown organic produce as well as a range of local products from the Wye Valley and surrounding areas. The farm dates back to 1978 when it was founded by Mr and Mrs Whittall, and it is now owned and operated by their son, Robert.",
+    "image": "https://www.squarefarmshop.co.uk/uploads/IDv17UDE/601x0_654x0/squarefarmshoplogo.jpg",
+    "specialties": [
+      "Organic Meat",
+      "Organic Vegetables",
+      "Free-Range Poultry",
+      "Traditional Mixed Farm Produce",
+      "Local Wye Valley Products"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Slade Farm Organics",
+    "location": "St Brides Major, Vale of Glamorgan",
+    "description": "Slade Farm Organics is run by Polly and Graeme, third generation farmers in St Brides Major, who prioritise working with nature and the local community. The farm delivers organic, sustainable produce through a closed cycle of nutrients, meaning all the farm's animals and crops are fed from their own 650 acres of mixed livestock and arable farming land in South Wales.",
+    "image": "https://images.squarespace-cdn.com/content/v1/5876083c5016e196ea7443a3/2ff6da51-5929-47b0-8598-d503837ce787/Map+wall+print+small.jpg",
+    "specialties": [
+      "Organic Beef",
+      "Organic Lamb",
+      "Organic Pork",
+      "Organic Sausages",
+      "Organic Burgers",
+      "Organic Vegetables",
+      "Organic Welsh Flour"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Rothiemurchus Estate Farm Shop",
+    "location": "Rothiemurchus, Aviemore, The Highlands",
+    "description": "Rothiemurchus Estate Farm Shop, nestled in the heart of the Cairngorms National Park, offers a wide range of locally produced and sourced products. Passionate about sustainability and ethical farming, the shop features home-reared Highland beef, forest venison, and rainbow trout, alongside a superb selection of cheeses, local beers, whiskies, and artisan preserves. Visitors can also enjoy the stunning scenery of Loch An Eilein, voted Britain's Best Picnic Spot.",
+    "image": "https://scottishfoodguide.com/wp-content/uploads/2023/10/rothie23d-768x576.jpg",
+    "specialties": [
+      "Highland Beef",
+      "Forest Venison",
+      "Rainbow Trout",
+      "Local Cheeses",
+      "Heather Honey",
+      "Local Beers",
+      "Whiskies",
+      "Seasonal Vegetables",
+      "Artisan Preserves"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Daylesford Organic",
+    "location": "Daylesford, Gloucestershire GL56 0YG",
+    "description": "Daylesford Organic, located in the heart of the Cotswolds, is a celebrated farm shop offering a wide range of organic produce. It features fruit and vegetables from its market garden, pasture-raised meat, artisan bread, and award-winning cheese, emphasizing sustainability and quality.",
+    "image": "https://www.daylesford.com/media/shopfinder/shop_image/13/Farm_Main2.jpg",
+    "specialties": [
+      "Organic Vegetables",
+      "Pasture-Raised Meat",
+      "Artisan Bread",
+      "Award-Winning Cheese",
+      "Organic Dairy"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Chatsworth Estate Farm Shop",
+    "location": "Pilsley, Derbyshire DE45 1UF",
+    "description": "The Chatsworth Estate Farm Shop, established by Duchess Deborah in 1977, celebrates local suppliers and estate-grown produce. Located in the picturesque village of Pilsley, it offers high-quality meat, dairy, vegetables, and artisan cheeses, all sourced from the estate and trusted local producers.",
+    "image": "https://www.wheeldontreescottages.com/wp-content/uploads/2024/08/Chatsworth-Farm-Shop.jpeg",
+    "specialties": [
+      "Estate-Grown Produce",
+      "Locally Farmed Meat",
+      "Artisan Cheeses",
+      "Seasonal Vegetables"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Cowdray Farm Shop",
+    "location": "Midhurst, West Sussex GU29 0AJ",
+    "description": "Cowdray Farm Shop, situated on the Cowdray Estate, offers premium country produce, including award-winning venison, beef, and lamb, alongside artisan cheeses and deli products. Its commitment to local sourcing and quality makes it a standout destination in West Sussex.",
+    "image": "https://i0.wp.com/www.cowdray.co.uk/wp-content/uploads/2020/07/Cowdray_Estate_240620_1078.jpg?resize=1600%2C900&ssl=1",
+    "specialties": [
+      "Award-Winning Venison",
+      "Estate-Raised Beef and Lamb",
+      "Artisan Cheeses",
+      "Local Deli Products"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Doddington Hall Farm Shop",
+    "location": "Doddington, Lincolnshire LN6 4RU",
+    "description": "Doddington Hall Farm Shop, opened in 2007, is an award-winning destination for seasonal, local food. It features fruit and vegetables from its restored kitchen garden, beef from its Lincoln Red cattle herd, and a variety of artisan products, showcasing Lincolnshire's agricultural heritage.",
+    "image": "",
+    "specialties": [
+      "Seasonal Local Produce",
+      "Lincoln Red Beef",
+      "Kitchen Garden Vegetables",
+      "Artisan Products"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Battlefield 1403",
+    "location": "Shrewsbury, Shropshire SY4 3DB",
+    "description": "Battlefield 1403, located next to the historic Battle of Shrewsbury site, is a farm shop, butchery, café, and visitor centre. It offers locally sourced beef, lamb, honey, and home-cooked ready meals, blending Shropshire's rich produce with historical significance.",
+    "image": "",
+    "specialties": [
+      "Locally Sourced Produce",
+      "Estate Beef and Lamb",
+      "Home-Cooked Ready Meals",
+      "Local Honey"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Alder Carr Farm Shop",
+    "location": "Creeting St. Mary, Ipswich, Suffolk IP6 8LX",
+    "description": "Alder Carr Farm Shop, a family-run enterprise in Suffolk, produces high-quality home-grown produce. Known for its free-range beef, lamb, eggs, and award-winning fruit ice cream, it offers a delightful range of local and artisan foods.",
+    "image": "",
+    "specialties": [
+      "Home-Grown Produce",
+      "Free-Range Beef and Lamb",
+      "Award-Winning Ice Cream",
+      "Local Eggs"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Kimbers Farm Shop",
+    "location": "Charlton Musgrove, Wincanton, Somerset BA9 8HD",
+    "description": "Kimbers Farm Shop, a family-run business farming for over 300 years in Somerset's Blackmore Vale, specializes in ethically reared meat, including beef, veal, turkey, poultry, lamb, and pork. It also offers local produce, emphasizing quality and animal welfare.",
+    "image": "",
+    "specialties": [
+      "Ethically Reared Meat",
+      "Local Produce",
+      "Home-Grown Wheat and Maize",
+      "Award-Winning Products"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Gloagburn Farm Shop",
+    "location": "Tibbermore, Perthshire PH1 1QL",
+    "description": "Gloagburn Farm Shop, family-run since 2003 in Perthshire, specializes in traditional beef and pork products, including sausages, burgers, and steaks. Its homemade savouries and hampers are popular, complemented by a selection of local produce and artisan foods.",
+    "image": "",
+    "specialties": [
+      "Traditional Beef",
+      "Traditional Pork",
+      "Homemade Savouries",
+      "Local Produce"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Connage Highland Dairy",
+    "location": "Ardersier",
+    "description": "Home of the Cheese Pantry and Deli at Connage where they make a range of fine cheeses on their family farm. Now also with a fabulous vending machine service…the Connage Express. You can visit their beautiful shop and check out their range of traditional and innovative cheeses.",
+    "image": "",
+    "specialties": [
+      "Traditional Ayrshire Dunlop Cheese",
+      "Farmhouse Cheeses",
+      "Local Dairy Products",
+      "Artisan Cheeses"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "The Ethical Dairy",
+    "location": "Gatehouse of Fleet",
+    "description": "The Finlay family reintroduced cheese making to Rainton Farm in 2013 after a 40 year break giving an opportunity to experiment and explore the flavours and textures of different types of cheese. They now have a fabulous range of cheeses, all made with ethical farming practices.",
+    "image": "",
+    "specialties": [
+      "Artisan Cheeses",
+      "Ethical Dairy Products",
+      "Traditional Cheese Making",
+      "Local Dairy"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Craigie's Farm Deli & Cafe",
+    "location": "South Queensferry",
+    "description": "The Sinclair family have created a wonderful destination here on the outskirts of Edinburgh. Originally – and still is – a berry farm, their fabulous produce takes you through the seasons from their PYO berries, apple orchards to pumpkins later in the year.",
+    "image": "",
+    "specialties": [
+      "PYO Berries",
+      "Apple Orchards",
+      "Seasonal Vegetables",
+      "Local Produce",
+      "Farm Fresh Products"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Hardiesmill",
+    "location": "Gordon",
+    "description": "RBST Winner 2023 Sustainable Farm of the Year, Hardiesmill is home to Alison, Robin and their family where they rear pasture fed pedigree Native Aberdeen Angus. Online sales, a regular at Kelso Farmers' Market plus their lovely Farm Shop open to visitors.",
+    "image": "",
+    "specialties": [
+      "Pasture Fed Aberdeen Angus Beef",
+      "Sustainable Farming",
+      "Local Meat",
+      "Farm Fresh Produce"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Peel Farm",
+    "location": "Kirriemuir",
+    "description": "Welcome to Peel Farm, a working family farm with imaginative diversifications that will keep you entertained all day – and even to stay longer. The Flemings are onto the third generation of this Angus farming family, offering a complete farm experience.",
+    "image": "",
+    "specialties": [
+      "Family Farm Produce",
+      "Local Angus Products",
+      "Farm Experience",
+      "Seasonal Produce"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Galloway Farmhouse Cheese",
+    "location": "Sorbie",
+    "description": "A fabulous award-winning range of organic artisan cheeses created in the heart of rural Wigtonshire. The Cairnsmore is their speciality cheese and they specialise in ewe's milk cheese however the range also includes cow and goat's milk versions.",
+    "image": "",
+    "specialties": [
+      "Cairnsmore Cheese",
+      "Ewe's Milk Cheese",
+      "Organic Artisan Cheeses",
+      "Local Dairy"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Carmichael Venison & Farmhouse Kitchen",
+    "location": "Biggar",
+    "description": "Heading southwards on the A73 – so pleasant to avoid motorways – you will find Carmichael Estate Farm Shop and can pause for tasty home baking at their Clan Farmhouse Kitchen. The Carmichael family have been farming these lands for 700 years and today offer a complete farm experience.",
+    "image": "",
+    "specialties": [
+      "Venison",
+      "Home Baking",
+      "Estate Produce",
+      "Traditional Farm Products"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Loch Arthur Creamery, Farm Shop and Cafe",
+    "location": "Beeswing",
+    "description": "The Loch Arthur Creamery and Farmshop is a great asset to Dumfries and Galloway. Creating a home, community, family and valued work, The Camphill Community offers 'co-operation not competition' to co-workers and has resulted in an organic food hub creating award-winning dairy produce.",
+    "image": "",
+    "specialties": [
+      "Award-Winning Dairy",
+      "Organic Food Hub",
+      "Community Farm Products",
+      "Local Dairy"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Isle of Mull Cheese",
+    "location": "Isle of Mull",
+    "description": "This family of farmhouse artisan cheesemakers use their own dairy herds and traditional methods to produce stunning award-winning unpasteurised Traditional Isle of Mull, and Hebridean Blue cheeses, along with Cloth Bound Tobermory Truckles and naturally flavoured wax coated Isle of Mull cheeses.",
+    "image": "",
+    "specialties": [
+      "Traditional Isle of Mull Cheese",
+      "Hebridean Blue Cheese",
+      "Cloth Bound Tobermory Truckles",
+      "Artisan Cheeses"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Ardross Farm",
+    "location": "Elie",
+    "description": "2021 Winner of The Best Farm Shop & Deli in Scotland in the Great British Food Awards. A huge congratulations goes to their awesome team for all the hours spent caring for their animals on the farm, cooking the most delicious food and providing excellent customer service.",
+    "image": "",
+    "specialties": [
+      "Award-Winning Farm Shop",
+      "Local Produce",
+      "Farm Fresh Products",
+      "Scottish Farm Products"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Balgove Larder",
+    "location": "Strathtyrum Farm, Strathtyrum, St Andrews, Fife KY16 9SF",
+    "description": "Started in 2010 by Will Docker and Henry Cheape to showcase Scottish produce, focusing on traditional farm retail and hospitality with single-link supply chains. Includes a shop, butchery, cafe, and Steak Barn restaurant in a former sawmill, emphasizing sustainability and community.",
+    "image": "https://foodanddrink.scotsman.com/wp-content/uploads/2022/03/Balgove-Larder-Night-Markets-1-scaled.jpg",
+    "specialties": [
+      "Daily Provisions",
+      "Fresh Field-Picked Vegetables",
+      "Handmade Deli Counter",
+      "Free-Range Meat",
+      "Ready Meals",
+      "Granola",
+      "Freshly Baked Scones"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Grow Wild",
+    "location": "Linlithgow, Scotland",
+    "description": "A farm shop offering fresh, organic produce, evolved from a delivery business established in 1998. Focuses on sustainability, organic, and natural lifestyles, with a warm atmosphere and knowledgeable team.",
+    "image": "",
+    "specialties": [
+      "Certified Organic Produce",
+      "Award-Winning Cheeses",
+      "Locally Made Charcuterie",
+      "Organic Meats",
+      "Mossgiel Milk",
+      "Fresh Bread",
+      "Free-Range Organic Eggs"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "The Heron Farm Shop",
+    "location": "Strathaven, South Lanarkshire",
+    "description": "Established in 2018 by Emma and Angus on their 122-acre farm, initially with Scottish Blackface breeding ewes and a Christmas tree plantation. Offers home-reared and local meats, focusing on quality products with good provenance.",
+    "image": "",
+    "specialties": [
+      "Home-Reared Meats",
+      "Charcuterie",
+      "Cheese",
+      "Dairy",
+      "Confectionery",
+      "Scottish Gins",
+      "Vodkas",
+      "Whiskeys"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Bowhouse",
+    "location": "St Monans, East Neuk, Anstruther, Fife KY10 2DB",
+    "description": "Based on Balcaskie Estate, covering 2,000 acres of organic and regeneratively farmed land in the East Neuk of Fife, developed as a centre for food and drink, known for monthly market weekends.",
+    "image": "https://www.visitscotland.com/img-library/fullscreen-image/customers-browse-a-stall-at-bowhouse-fullscreen.jpg",
+    "specialties": [
+      "Artisan Food and Drink",
+      "Local Ingredients",
+      "Monthly Markets",
+      "Community Producers"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Loch Leven's Larder",
+    "location": "Channel Farm, Kinross KY13 9HD",
+    "description": "Opened in 2005 by Emma and Robin Niven on their family farm by Loch Leven, started with a café and market stall, now employs over 80 staff, with over 200,000 annual visitors.",
+    "image": "https://foodanddrink.scotsman.com/wp-content/uploads/2023/04/Loch-Levens-Larder-Cafe-scaled.jpg",
+    "specialties": [
+      "Vegetables Grown on Farm",
+      "Café Products",
+      "Market Stall Products",
+      "Local Produce"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Blair Drummond Smiddy Farm Shop",
+    "location": "Blair Drummond, Stirling FK9 4UY",
+    "description": "Farm shop stocking local produce from local suppliers and farms, with an excellent café.",
+    "image": "",
+    "specialties": [
+      "Local Produce",
+      "Food",
+      "Drinks",
+      "Homewares"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Barra Berries",
+    "location": "Barra Castle, Oldmeldrum, Inverurie AB51 0BB",
+    "description": "Aberdeen soft fruit producers known for producing fine fresh berries in the North-east.",
+    "image": "",
+    "specialties": [
+      "Strawberries",
+      "Raspberries",
+      "Blackberries",
+      "Luxury Jam"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Balgone Estate",
+    "location": "East Lothian",
+    "description": "A farm perched on the coast of East Lothian with views of the North Sea and Berwick Law, offering pumpkin picking in a 10-acre patch with 27 varieties, a Haunted Trail, and the Crooked Cauldron for toasted marshmallows.",
+    "image": "https://balgoneestate.co.uk/20230810_172755.jpg",
+    "specialties": [
+      "Pumpkin Picking",
+      "27 Varieties of Pumpkins",
+      "Seasonal Food Events",
+      "Pizza Vans",
+      "Street Food"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Westerton Farmers",
+    "location": "Laurencekirk, Aberdeenshire",
+    "description": "An arable farm passionate about reconnecting people with nature, offering a 'pick your own' scheme including pumpkin picking in October. Features a Farm to Table shop and refillery with local produce.",
+    "image": "",
+    "specialties": [
+      "Pick Your Own Vegetables",
+      "Local Jams",
+      "Honey",
+      "Meat",
+      "Takeaway Food"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Glenforsa",
+    "location": "Isle of Mull, Benmore Estate",
+    "description": "A café and farm shop on the east coast of Mull, inspired by fresh island ingredients, offering dishes like Isle of Mull Rarebit and West Coast Fish Plate with local mackerel pâté and smoked salmon.",
+    "image": "https://www.visitscotland.com/img-library/fullscreen-image/pastries-and-coffee-at-glenforsa-cafe-fullscreen.jpg",
+    "specialties": [
+      "Isle of Mull Rarebit",
+      "West Coast Fish Plate",
+      "Local Mackerel Pâté",
+      "Smoked Salmon",
+      "Local Island Ingredients"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Wilson's Farm & Kitchen",
+    "location": "Kelso, Scottish Borders",
+    "description": "A family-run farm for three generations, offering Field to Fork tours and themed food experiences like curry nights and 25-mile BBQ or roast lunch with seasonal, locally sourced ingredients within a 25-mile radius.",
+    "image": "https://www.visitscotland.com/img-library/fullscreen-image/wilsons-farm-kitchen-fullscreen.jpg",
+    "specialties": [
+      "Field to Fork Tours",
+      "Themed Food Experiences",
+      "25-Mile Radius Ingredients",
+      "Curry Nights",
+      "BBQ",
+      "Roast Lunch"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Long Island Retreats and Larder",
+    "location": "South Uist, near Loch Skipport",
+    "description": "Run by 6th-generation crofters, offering authentic farm experiences with wildlife, livestock, and Gaelic language, including Field to Fork experiences and picnic baskets for island tours.",
+    "image": "https://www.visitscotland.com/img-library/fullscreen-image/long-island-retreats-larder-fullscreen.jpg",
+    "specialties": [
+      "Authentic Crofting Experiences",
+      "Field to Fork Experiences",
+      "Island Picnics",
+      "Shetland Ponies",
+      "Highland Cows",
+      "Pigs",
+      "Sheep"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Solsgirth Home Farm",
+    "location": "Stirlingshire",
+    "description": "A 100-year-old farm with 260 acres of woodland and pasture, focusing on conservation and healthy food, offering farm tours, hands-on experiences, monthly farmers markets, and workshops like stick carving and beekeeping.",
+    "image": "https://www.solsgirthhomefarm.co.uk/450427549_793575179595106_6228935172799382850_n.jpg",
+    "specialties": [
+      "Monthly Farmers Markets",
+      "Autumn Apple Pressing",
+      "Farm Tours",
+      "Hands-On Experiences",
+      "Stick Carving",
+      "Beekeeping"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Broughgammon Farm",
+    "location": "50 Straid Road, Ballycastle, County Antrim BT54 6NP",
+    "description": "A family farm dedicated to producing ethical, sustainable meat and artisan produce through nature-friendly farming.",
+    "image": "https://www.broughgammon.com/wp-content/uploads/2022/06/Broughgammon-Farm-Shop.jpg",
+    "specialties": [
+      "Ethical Meat",
+      "Sustainable Meat",
+      "Artisan Produce",
+      "Nature-Friendly Farming"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Hillstown Farm Shop",
+    "location": "128 Glebe Road, Ahoghill, County Antrim BT42 2HZ",
+    "description": "Multi-award-winning farm shop offering meats direct from farm to fork, with online delivery options.",
+    "image": "https://hillstownfarmshop.com/wp-content/uploads/2023/09/Hillstown-Farm-Shop.jpg",
+    "specialties": [
+      "Award-Winning Meats",
+      "Farm to Fork",
+      "Online Delivery",
+      "Local Meat"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Millbank Farm Shop",
+    "location": "Killinchy, County Down",
+    "description": "A sixth-generation family farm growing over 40 varieties of vegetables, with a focus on fresh produce.",
+    "image": "https://www.millbankfarm.com/wp-content/uploads/2023/05/millbank-farm-shop.jpg",
+    "specialties": [
+      "Over 40 Varieties of Vegetables",
+      "Swedes",
+      "Squash",
+      "Carrots",
+      "Kale",
+      "Fresh Produce"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "McKee's Country Store, Farm Shop & Restaurant",
+    "location": "28 Hollywood Road, Newtownards, County Down BT23 7ED",
+    "description": "On a working 162-hectare farm, the food emporium incorporates a bakery, butcher, deli, plus fruit, vegetable, and dairy sections.",
+    "image": "https://www.mckeesproduce.com/wp-content/uploads/2023/07/mckees-farm-shop.jpg",
+    "specialties": [
+      "Bakery",
+      "Butcher",
+      "Deli",
+      "Fruit",
+      "Vegetables",
+      "Dairy",
+      "Farm Products"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Ballykenver Farm Shop and Kitchen",
+    "location": "77 Ballykenver Road, Armoy, County Antrim BT53 8RP",
+    "description": "A farm shop and kitchen offering local produce in a scenic location.",
+    "image": "",
+    "specialties": [
+      "Fresh Local Produce",
+      "Meats",
+      "Café Options",
+      "Local Food"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Apley Farm Shop",
+    "location": "Apley Estate, Bridgnorth, Shropshire WV16 6FL",
+    "description": "Focuses on traditional farming, quality food, and family time, an award-winning experience with various attractions.",
+    "image": "",
+    "specialties": [
+      "Local Meats",
+      "Produce",
+      "Family-Friendly Food",
+      "Traditional Farming"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Arrow Farm Shop",
+    "location": "Arrow Farm, Worksop, Nottinghamshire S80 3DZ",
+    "description": "Owned and run by the Blagg Family with over half a century of farming experience, opened in 1991.",
+    "image": "",
+    "specialties": [
+      "Home-Reared Meats",
+      "Fresh Produce",
+      "Bakery Items",
+      "Local Food"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Ashlyns Farm Shop",
+    "location": "North Weald, Epping, Essex CM16 6RZ",
+    "description": "Dedicated to stocking the best fresh, local, and organic produce.",
+    "image": "",
+    "specialties": [
+      "Fresh Produce",
+      "Local Produce",
+      "Organic Produce",
+      "Fruits",
+      "Vegetables",
+      "Dairy"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Downland Produce",
+    "location": "Wiltshire",
+    "description": "A destination for top-quality, locally sourced meats with a commitment to excellence.",
+    "image": "",
+    "specialties": [
+      "Locally Sourced Meats",
+      "Quality Meat",
+      "Local Produce"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Dews Meadow Farm Shop",
+    "location": "East Hanney, Oxfordshire",
+    "description": "An independent, family-run butchery and farm shop offering high-welfare products.",
+    "image": "",
+    "specialties": [
+      "High-Welfare Meats",
+      "Butchery",
+      "Local Produce",
+      "Quality Meat"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Barnhill Farmshop",
+    "location": "Glasgow",
+    "description": "A working farm and farm shop set amongst 70 acres of land on the outskirts.",
+    "image": "",
+    "specialties": [
+      "Local Farm Produce",
+      "Fresh Food",
+      "Local Products"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Barr Farm",
+    "location": "North Yorkshire",
+    "description": "Cattle and pigs produce delicious and nutritious meat sold direct from the farm gate.",
+    "image": "",
+    "specialties": [
+      "Cattle Meat",
+      "Pig Meat",
+      "Direct Farm Sales",
+      "Quality Meat"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Aunt Fanny's Farm Shop & Cafe",
+    "location": "Gillingham, Dorset",
+    "description": "Farm shop stocked with a variety of delicious local produce not found in regular shops.",
+    "image": "",
+    "specialties": [
+      "Local Produce",
+      "Handmade Items",
+      "Fresh Food",
+      "Local Products"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Craigies Deli & Farm Shop",
+    "location": "West Craigie Farm, Queensferry, Edinburgh EH30 9AR",
+    "description": "Run by fourth-generation farmer John Sinclair and his family, including wife Kirsteen, children Sophie and George, and John's mother Anne. Transformed from a struggling beef and dairy farm into a thriving soft fruit and vegetable business with a shop, cafe, and activities like pick your own and Little Farmers adventure farm park, attracting 260,000 visitors a year.",
+    "image": "",
+    "specialties": [
+      "Freshly Baked Bread",
+      "Homemade Cakes",
+      "Deli Treats",
+      "Scottish Cheeses",
+      "Quality Meat",
+      "Everyday Essentials"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Balmakewan Farm Shop & Tea Room",
+    "location": "Aberdeenshire",
+    "description": "A farm shop and tea room serving tea, coffee, and cake on a welcoming farm.",
+    "image": "",
+    "specialties": [
+      "Tea",
+      "Coffee",
+      "Cake",
+      "Farm Produce",
+      "Local Food"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Darts Farm",
+    "location": "Topsham, Devon EX3 0QH",
+    "description": "Over 50 years ago, Ronald Dart pioneered UK pick-your-own farming. After his passing, sons Paul, Michael, and James transformed Darts Farm into a celebrated Exeter hub for farm-to-table dining, local produce, artisan goods, and sustainable practices, championing regional flavours through vibrant restaurants, a café, cheesemonger, and butchery. Winner of Large Farm Shop of the Year at Farm Retail Awards 2025.",
+    "image": "",
+    "specialties": [
+      "Artisan Food & Drink Hampers",
+      "Devonshire Cream Tea Hamper",
+      "West Country Cheese & Cider",
+      "The Ultimate Darts Farm Hamper",
+      "Fizz, Cheese & Charcuterie Hamper",
+      "Seasonal Vegetable Box",
+      "West Country Hampers",
+      "Wellness Postbox Hamper",
+      "West Country Cider & Artisan Chocolate",
+      "Pebblebed Sparkling Rosé"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Castle Farm",
+    "location": "Shoreham, Kent TN14 7UB",
+    "description": "Castle Farm is a 4th generation family-run, 1,200-acre farm in Kent, centred around its Farm Shop. Offering a diverse range of home-grown produce, including hops and lavender, visitors can enjoy seasonal activities like PYO sunflowers and pumpkin picking. In the summer months, our Lavender fields burst into colour across the Kent landscape, and we harvest and extract pure Lavender Oil. The farm’s own beef, apples, apple juice, Kentish hop garlands, dried flowers, pumpkins, Lavender oils, food essences, Lavender teas, and honey are all sold through our unique, award-winning farm shop, and online, along with carefully selected gifts, cards, crafts, seasonal decorations, food hampers, and local, traceable produce. Winner of Small Farm Shop of the Year at Farm Retail Awards 2025.",
+    "image": "",
+    "specialties": [
+      "Beef",
+      "Apples",
+      "Apple juice",
+      "Kentish hop garlands",
+      "Dried flowers",
+      "Pumpkins",
+      "Lavender oils",
+      "Food essences",
+      "Lavender teas",
+      "Honey",
+      "Gifts",
+      "Cards",
+      "Crafts",
+      "Seasonal decorations",
+      "Food hampers",
+      "Local, traceable produce"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Garson Farm",
+    "location": "Esher, Surrey KT10 8AN",
+    "description": "Garson Farm PYO, one of the UK's largest, spans over 155 acres in Esher, Surrey. Family-run since 1871, the farm's fresh produce was transported to the London market traders up to 1981 when it opened to the public. From May to October, the farm attracts over 115,000 visitors, offering around 30 crops of fruits, vegetables, and flower crops. Winner of Pick Your Own of the Year at Farm Retail Awards 2025.",
+    "image": "",
+    "specialties": [
+      "PYO fruits",
+      "Vegetables",
+      "Flower crops",
+      "Seasonal produce"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Millets Farm Centre",
+    "location": "Frilford, Abingdon OX13 5HB",
+    "description": "Millets Farm Centre, originally a dairy farm purchased in 1952 by John and Christine Carter, has evolved over the years into a site that includes a farm shop, Webbs Garden Centre, independent retailers, restaurants, and various attractions like Sprouts Playbarn and Adventure Golf. The family has invested in new infrastructure and landscaping while maintaining a commitment to growing and producing high-quality food and providing a space for family entertainment and community engagement. Two generations of the family continue to run the farm, upholding their farming heritage. Winner of Farm Shop Butchery of the Year at Farm Retail Awards 2025.",
+    "image": "https://milletsfarmcentre.com/Millets-MLP12448_176",
+    "specialties": [
+      "High-quality food grown and produced on the farm",
+      "Meats from butchery",
+      "Seasonal produce"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "River Cottage Kitchen and Store",
+    "location": "Park Farm, Musbury, Axminster EX13 8TB",
+    "description": "Situated atop of their working farm, above the Cookery School and Farmhouse, the River Cottage Kitchen & Store is ideal for breakfast, lunch, afternoon tea, or evening drinks. Enjoy stunning views of the Axe Valley and Jurassic coast in their casual, dog-friendly space that embraces the essence of River Cottage HQ. At River Cottage, every bite tells a story. The food is rooted in their farm, where they grow much of their own produce, and everything else comes from trusted local partners. It is seasonal, local, organic, and whole, reflecting a deep connection to nature, flavour, and quality, as part of Hugh Fearnley-Whittingstall’s vision for a more thoughtful way to eat and live. Winner of Rising Star of the Year at Farm Retail Awards 2025.",
+    "image": "",
+    "specialties": [
+      "Wood-fired pizzas",
+      "Handcrafted cocktails",
+      "Seasonal produce grown on the farm",
+      "Dining experiences from award-winning chefs"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Strawberry Fields",
+    "location": "Lifton, Devon PL16 0DE",
+    "description": "Strawberry Fields is a family-run farm shop in Devon, focusing on offering quality homemade and own produce from their 200-acre farm. Led by Jo Mounce, it has become one of the UK’s largest farm shops. Winner of Lifetime Achievement Award at Farm Retail Awards 2025 for outstanding contribution to the sector.",
+    "image": "",
+    "specialties": [
+      "Homemade produce",
+      "Own farm products",
+      "Local goods"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Farmer Copleys",
+    "location": "Ravensknowle Farm, Pontefract Road, Pontefract WF7 5AF",
+    "description": "Farmer Copleys is a family-run farm shop in Pontefract, offering a range of local produce and experiences. Winner of Farm Shop Large and North of England regional winner at Farm Shop & Deli Retailer Awards 2025.",
+    "image": "",
+    "specialties": [
+      "Local produce",
+      "Farm-fresh items",
+      "Seasonal goods"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Brunswick Organic Nursery Shop",
+    "location": "Bishopthorpe, York YO23 2RF",
+    "description": "Brunswick Organic Nursery Shop is a small farm shop in York, focusing on organic produce. Winner of Best Retailer – Farm Shop (Small) at Farm Shop & Deli Retailer Awards 2025.",
+    "image": "",
+    "specialties": [
+      "Organic vegetables",
+      "Local dairy",
+      "Artisan products"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Fordhall Farm Shop",
+    "location": "Market Drayton, Shropshire TF9 3PS",
+    "description": "Fordhall Organic Farm is England's first community-owned farm, located in Market Drayton, north Shropshire. It has been chemical-free for over 70 years and is managed by tenant farmer Ben Hollins, who rears pasture-fed cattle, sheep, and free-range pigs using a Foggage farming system. The farm is community-owned through the Fordhall Community Land Initiative, a charitable community benefit society, following a campaign in 2006 supported by over 8,000 people worldwide. It aims to demonstrate that low-input organic farming, connected to the local community, offers a viable way of life for future generations. The farm is family-run, dog-friendly, and welcomes cyclists, offering free entry and operating with specific opening hours for the farm and café. It also serves as a space for community relaxation, well-being, and fun. Winner of Best Retailer – Online Business at Farm Shop & Deli Retailer Awards 2025.",
+    "image": "",
+    "specialties": [
+      "Pasture-fed cattle",
+      "Sheep",
+      "Free-range pigs",
+      "Farm shop products",
+      "Hog roasts",
+      "Catering services"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Marshall’s Farm Shop",
+    "location": "Boghead Farm, Kintore, Aberdeenshire AB51 0XD",
+    "description": "Marshall’s Farm Shop is a family-run business owned and operated by Farmer Kenny Marshall, his wife Moira, and their three daughters, Christine, Julie, and Shona, alongside 20 full-time employed staff members. The shop has recently opened a brand new, larger area to stock more local products, including their own homegrown vegetables, free range eggs, and fresh meat. It also features a new bakery with home-baked bread, cakes, desserts, and ice creams. Adjacent to the shop, there are two securely fenced dog fields for dogs to roam freely, equipped with shelters, picnic tables, and drinking water facilities, available for booking online. The shop also includes a kitchen and a Fireside Bothy, with various seating options for dining, and a drive-through for snacks and beverages. Winner of Regional Winner – Scotland at Farm Shop & Deli Retailer Awards 2025.",
+    "image": "",
+    "specialties": [
+      "Homegrown vegetables",
+      "Free range eggs",
+      "Fresh meat",
+      "Home-baked bread",
+      "Cakes",
+      "Desserts",
+      "Ice creams"
+    ]
+  }
+]

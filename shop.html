@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Shop Online - British Farm Co-op</title>
+    <link rel="stylesheet" href="css/styles.css?v=1032">
+    <link rel="stylesheet" href="css/shop.css?v=1006">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Shop British Farm Products</h2>
+                    <p>Fresh, local products from our trusted farm partners. Order for collection or delivery.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop-section">
+            <div class="container">
+                <div class="shop-layout">
+                    <!-- Filters Sidebar -->
+                    <aside class="filters-sidebar">
+                        <div class="filter-group">
+                            <h3>Categories</h3>
+                            <div class="category-filters">
+                                <label class="filter-option">
+                                    <input type="checkbox" value="Meat" class="category-filter">
+                                    <span class="checkmark"></span>
+                                    Meat & Poultry
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="Vegetables" class="category-filter">
+                                    <span class="checkmark"></span>
+                                    Vegetables
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="Fruits" class="category-filter">
+                                    <span class="checkmark"></span>
+                                    Fruits
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="Dairy & Eggs" class="category-filter">
+                                    <span class="checkmark"></span>
+                                    Dairy & Eggs
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="Pantry" class="category-filter">
+                                    <span class="checkmark"></span>
+                                    Food Cupboard
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="Bakery" class="category-filter">
+                                    <span class="checkmark"></span>
+                                    Bakery
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="Beverages" class="category-filter">
+                                    <span class="checkmark"></span>
+                                    Beverages
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="Fish" class="category-filter">
+                                    <span class="checkmark"></span>
+                                    Fish
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="Homeware" class="category-filter">
+                                    <span class="checkmark"></span>
+                                    Homeware
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3>Farm</h3>
+                            <div class="farm-filters">
+                                <label class="filter-option">
+                                    <input type="checkbox" value="devon" class="farm-filter">
+                                    <span class="checkmark"></span>
+                                    Devon Valley Farm
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="kent" class="farm-filter">
+                                    <span class="checkmark"></span>
+                                    Kent Apple Orchard
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="yorkshire" class="farm-filter">
+                                    <span class="checkmark"></span>
+                                    Yorkshire Beef Farm
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="cornwall" class="farm-filter">
+                                    <span class="checkmark"></span>
+                                    Cornwall Vegetable Farm
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="scottish" class="farm-filter">
+                                    <span class="checkmark"></span>
+                                    Scottish Highland Farm
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="welsh" class="farm-filter">
+                                    <span class="checkmark"></span>
+                                    Welsh Mountain Farm
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="diddly-squat" class="farm-filter">
+                                    <span class="checkmark"></span>
+                                    Diddly Squat Farm Shop
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="murton" class="farm-filter">
+                                    <span class="checkmark"></span>
+                                    Murton Farm Shop
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3>Availability</h3>
+                            <div class="availability-filters">
+                                <label class="filter-option">
+                                    <input type="checkbox" value="In Stock" class="availability-filter">
+                                    <span class="checkmark"></span>
+                                    In Stock
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="Low Stock" class="availability-filter">
+                                    <span class="checkmark"></span>
+                                    Low Stock
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="Pre-order" class="availability-filter">
+                                    <span class="checkmark"></span>
+                                    Pre-order
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3>Delivery Options</h3>
+                            <div class="delivery-filters">
+                                <label class="filter-option">
+                                    <input type="checkbox" value="collection" class="delivery-filter">
+                                    <span class="checkmark"></span>
+                                    Collection
+                                </label>
+                                <label class="filter-option">
+                                    <input type="checkbox" value="delivery" class="delivery-filter">
+                                    <span class="checkmark"></span>
+                                    Delivery
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-secondary clear-filters">Clear All Filters</button>
+                    </aside>
+
+                    <!-- Products Grid -->
+                    <div class="products-section">
+                        <div class="products-header">
+                            <div class="products-info">
+                                <h3>Products</h3>
+                                <span class="product-count">Showing <span id="product-count">0</span> products</span>
+                            </div>
+                            <div class="sort-controls">
+                                <label for="sort-select">Sort by:</label>
+                                <select id="sort-select" class="sort-select">
+                                    <option value="name">Name A-Z</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="farm">Farm</option>
+                                    <option value="category">Category</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="products-grid" id="products-grid">
+                            <!-- Products will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shopping Cart Sidebar -->
+        <div class="cart-sidebar" id="cart-sidebar">
+            <div class="cart-header">
+                <h3>Shopping Cart</h3>
+                <button class="cart-close" id="cart-close">&times;</button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-amount">£0.00</span>
+                </div>
+                <button class="btn btn-primary checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+
+        <!-- Cart Toggle Button -->
+        <button class="cart-toggle" id="cart-toggle">
+            🛒 <span class="cart-count">0</span>
+        </button>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="js/utils.js?v=1001"></script>
+    <script src="js/validation.js?v=1002"></script>
+    <script src="js/messaging.js?v=1002"></script>
+    <script src="js/data.js?v=1002"></script>
+    <script src="js/product-display.js?v=1002"></script>
+    <script src="js/cart.js?v=1011"></script>
+    <script src="js/shop.js?v=1011"></script>
+    <script src="js/template-loader.js?v=1008"></script>
+</body>
+</html> 

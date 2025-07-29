@@ -1,0 +1,400 @@
+/* Individual Farm Page Styles */
+
+.farm-hero {
+    background: linear-gradient(135deg, #1A3C34 0%, #2d5a4f 100%);
+    color: white;
+    padding: 4rem 0;
+}
+
+.farm-hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.farm-hero-image {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.farm-hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.farm-hero-info h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.farm-location {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.farm-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.farm-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #E8F5E8;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Farm Story Section */
+.farm-story {
+    padding: 4rem 0;
+    background: white;
+}
+
+.story-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.story-content h2 {
+    color: #1A3C34;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.story-content p {
+    color: #403c3b;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.farm-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 2px solid #E8F5E8;
+}
+
+.value {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 15px;
+    border: 1px solid #E0E0E0;
+}
+
+.value h3 {
+    color: #1A3C34;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.value p {
+    color: #403c3b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Farm Products Section */
+.farm-products {
+    padding: 4rem 0;
+    background: linear-gradient(#ffffff 0%, #ffffff 20%, #dad7c8 80%);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(26, 60, 52, 0.15);
+}
+
+.product-image {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #1A3C34;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.product-info {
+    padding: 1.5rem;
+}
+
+.product-info h3 {
+    color: #1A3C34;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.product-description {
+    color: #403c3b;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.product-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.product-price {
+    color: #1A3C34;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.product-availability {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.availability-in-stock {
+    background: #E8F5E8;
+    color: #1A3C34;
+}
+
+.availability-low-stock {
+    background: #FFF3CD;
+    color: #856404;
+}
+
+.product-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.delivery-info {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.shop-all-products {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Farm Visit Section */
+.farm-visit {
+    padding: 4rem 0;
+    background: white;
+}
+
+.visit-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.visit-info h2 {
+    color: #1A3C34;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.visit-info p {
+    color: #403c3b;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.visit-details {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.detail h3 {
+    color: #1A3C34;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.detail p {
+    color: #403c3b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.visit-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.visit-image {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.visit-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .farm-hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .farm-hero-info h1 {
+        font-size: 2.5rem;
+    }
+    
+    .farm-stats {
+        gap: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .story-content h2 {
+        font-size: 2rem;
+    }
+    
+    .farm-values {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .visit-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .visit-info h2 {
+        font-size: 2rem;
+    }
+    
+    .visit-actions {
+        flex-direction: column;
+    }
+    
+    .visit-actions .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .farm-hero {
+        padding: 2rem 0;
+    }
+    
+    .farm-hero-info h1 {
+        font-size: 2rem;
+    }
+    
+    .farm-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .story-content {
+        padding: 0 1rem;
+    }
+    
+    .story-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .farm-values {
+        padding: 0 1rem;
+    }
+    
+    .value {
+        padding: 1.5rem;
+    }
+    
+    .visit-info h2 {
+        font-size: 1.8rem;
+    }
+    
+    .visit-details {
+        gap: 1rem;
+    }
+} 

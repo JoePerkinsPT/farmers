@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - British Farm Co-op</title>
+    <link rel="stylesheet" href="css/styles.css?v=1023">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <!-- Authentication Loading Screen -->
+    <div id="auth-loading" class="auth-loading">
+        <div class="auth-loading-content">
+            <div class="spinner"></div>
+            <p>Verifying admin access...</p>
+        </div>
+    </div>
+
+    <main class="admin-main" id="admin-content" style="display: none;">
+        <div class="container">
+            <!-- Admin Navigation Tabs -->
+            <div class="admin-tabs">
+                <button class="tab-btn active" data-tab="products">📦 Products</button>
+                <button class="tab-btn" data-tab="applications">🏠 Farm Applications</button>
+                <button class="tab-btn" data-tab="notifications">🔔 Notifications</button>
+            </div>
+
+            <!-- Products Tab -->
+            <div class="tab-content active" id="products-tab">
+                <div class="admin-header">
+                    <h2>Produce Management</h2>
+                    <p>Add, update, or remove produce from your farm's inventory</p>
+                </div>
+
+                <div class="admin-content">
+                    <section class="form-section">
+                        <h3>Add New Product</h3>
+                        <form id="product-form" class="admin-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Product Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="farm-name">Farm Name *</label>
+                                    <input type="text" id="farm-name" name="farm-name" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="category">Category *</label>
+                                    <select id="category" name="category" required>
+                                        <option value="">Select Category</option>
+                                        <option value="Fruits">Fruits</option>
+                                        <option value="Vegetables">Vegetables</option>
+                                        <option value="Dairy">Dairy</option>
+                                        <option value="Meats">Meats</option>
+                                        <option value="Grains">Grains</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="availability">Availability *</label>
+                                    <select id="availability" name="availability" required>
+                                        <option value="">Select Availability</option>
+                                        <option value="In Stock">In Stock</option>
+                                        <option value="Out of Stock">Out of Stock</option>
+                                        <option value="Limited">Limited</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="price">Price (£) *</label>
+                                    <input type="number" id="price" name="price" step="0.01" min="0" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="unit">Unit *</label>
+                                    <input type="text" id="unit" name="unit" placeholder="e.g., per kg, per dozen" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="image">Image URL *</label>
+                                <input type="url" id="image" name="image" placeholder="https://example.com/image.jpg" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="description">Description *</label>
+                                <textarea id="description" name="description" rows="4" placeholder="Describe your produce..." required></textarea>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary" id="submit-btn">Save Product</button>
+                                <button type="button" class="btn btn-secondary" id="clear-btn">Clear Form</button>
+                            </div>
+                        </form>
+                    </section>
+
+                    <section class="table-section">
+                        <div class="table-header">
+                            <h3>Current Products</h3>
+                        </div>
+
+                        <div class="table-container">
+                            <table id="product-table" class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Name</th>
+                                        <th>Farm</th>
+                                        <th>Category</th>
+                                        <th>Price</th>
+                                        <th>Availability</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table-body">
+                                    <!-- Products will be loaded here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Farm Applications Tab -->
+            <div class="tab-content" id="applications-tab">
+                <div class="admin-header">
+                    <h2>Farm Applications</h2>
+                    <p>Review and manage farm applications</p>
+                </div>
+
+                <div class="admin-content">
+                    <div class="applications-container">
+                        <div class="applications-list" id="applications-list">
+                            <!-- Applications will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notifications Tab -->
+            <div class="tab-content" id="notifications-tab">
+                <div class="admin-header">
+                    <h2>Notifications</h2>
+                    <p>Recent activity and alerts</p>
+                </div>
+
+                <div class="admin-content">
+                    <div class="notifications-container">
+                        <div class="notifications-list" id="notifications-list">
+                            <!-- Notifications will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="js/utils.js?v=1001"></script>
+    <script src="js/validation.js?v=1002"></script>
+    <script src="js/messaging.js?v=1002"></script>
+    <script src="js/data.js?v=1002"></script>
+    <script src="js/product-display.js?v=1002"></script>
+    <script src="js/admin.js?v=1003"></script>
+    <script src="js/template-loader.js?v=1012"></script>
+</body>
+</html> 

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Seasonal Calendar - British Farm Co-op</title>
+    <link rel="stylesheet" href="css/styles.css?v=1022">
+    <link rel="stylesheet" href="css/calendar.css?v=1002">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Seasonal Produce Calendar</h2>
+                    <p>Discover what's in season throughout the year across the UK</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="calendar-section">
+            <div class="container">
+                <div class="calendar-header">
+                    <h2>UK Seasonal Farm Calendar</h2>
+                    <p>Plan your shopping and menus based on what's fresh and in season. Click on any produce to shop for it!</p>
+                </div>
+
+                <!-- Year-round produce section -->
+                <div class="year-round-section">
+                    <h3>🌱 Year-round Produce</h3>
+                    <p>These products are available throughout the year from our British farms:</p>
+                    <div class="year-round-grid">
+                        <div class="produce-category">
+                            <h4>🥛 Dairy & Eggs</h4>
+                            <p>Milk, cheese, butter, yogurt, cream, ice cream, eggs</p>
+                            <div class="year-round-links">
+                                <a href="shop.html?category=Dairy & Eggs" class="btn btn-primary">Shop Dairy & Eggs</a>
+                            </div>
+                        </div>
+                        <div class="produce-category">
+                            <h4>🍞 Bread & Bakery</h4>
+                            <p>Fresh bread, artisan bread, sourdough, cakes, pastries</p>
+                            <div class="year-round-links">
+                                <a href="shop.html?search=bread" class="btn btn-primary">Shop Bread</a>
+                            </div>
+                        </div>
+                        <div class="produce-category">
+                            <h4>🍯 Honey & Sweeteners</h4>
+                            <p>Local honey, heather honey, raw honey</p>
+                            <div class="year-round-links">
+                                <a href="shop.html?search=honey" class="btn btn-primary">Shop Honey</a>
+                            </div>
+                        </div>
+                        <div class="produce-category">
+                            <h4>🌾 Flour & Grains</h4>
+                            <p>Organic flour, whole grains, baking ingredients</p>
+                            <div class="year-round-links">
+                                <a href="shop.html?search=flour" class="btn btn-primary">Shop Flour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Season selector -->
+                <div class="season-selector">
+                    <h3>🌿 Seasonal Guide</h3>
+                    <div class="season-tabs">
+                        <button class="season-tab active" data-season="spring">
+                            <span class="season-icon">🌸</span>
+                            <span class="season-name">Spring</span>
+                            <span class="season-months">Mar - May</span>
+                        </button>
+                        <button class="season-tab" data-season="summer">
+                            <span class="season-icon">☀️</span>
+                            <span class="season-name">Summer</span>
+                            <span class="season-months">Jun - Aug</span>
+                        </button>
+                        <button class="season-tab" data-season="autumn">
+                            <span class="season-icon">🍂</span>
+                            <span class="season-name">Autumn</span>
+                            <span class="season-months">Sep - Nov</span>
+                        </button>
+                        <button class="season-tab" data-season="winter">
+                            <span class="season-icon">❄️</span>
+                            <span class="season-name">Winter</span>
+                            <span class="season-months">Dec - Feb</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Month selector within seasons -->
+                <div class="month-selector">
+                    <h3>📅 Monthly Breakdown</h3>
+                    <div class="month-tabs" id="month-tabs">
+                        <!-- Month tabs will be dynamically generated based on selected season -->
+                    </div>
+                </div>
+
+                <!-- Seasonal produce display -->
+                <div class="seasonal-display">
+                    <div class="produce-categories">
+                        <div class="produce-category meat">
+                            <h4>🥩 Meat</h4>
+                            <div class="produce-items" id="meat-items">
+                                <!-- Meat items will be loaded here -->
+                            </div>
+                        </div>
+                        
+                        <div class="produce-category vegetables">
+                            <h4>🥬 Vegetables</h4>
+                            <div class="produce-items" id="vegetables-items">
+                                <!-- Vegetable items will be loaded here -->
+                            </div>
+                        </div>
+                        
+                        <div class="produce-category fruits">
+                            <h4>🍎 Fruits</h4>
+                            <div class="produce-items" id="fruits-items">
+                                <!-- Fruit items will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shop links section -->
+                <div class="shop-links">
+                    <h3>🛒 Shop Seasonal Produce</h3>
+                    <div class="shop-buttons">
+                        <a href="shop.html?category=Meat" class="btn btn-primary">Shop Meat & Poultry</a>
+                        <a href="shop.html?category=Vegetables" class="btn btn-primary">Shop Vegetables</a>
+                        <a href="shop.html?category=Dairy & Eggs" class="btn btn-primary">Shop Dairy & Eggs</a>
+                        <a href="shop.html" class="btn btn-secondary">View All Products</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="js/utils.js?v=1001"></script>
+    <script src="js/validation.js?v=1002"></script>
+    <script src="js/messaging.js?v=1002"></script>
+    <script src="js/data.js?v=1002"></script>
+    <script src="js/product-display.js?v=1002"></script>
+    <script src="js/template-loader.js?v=1013"></script>
+    <script src="js/calendar.js?v=1004"></script>
+</body>
+</html> 

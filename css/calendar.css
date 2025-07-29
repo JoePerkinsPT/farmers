@@ -1,0 +1,728 @@
+/* Mobile-first UK Seasonal Calendar Styles */
+
+.calendar-section {
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.calendar-header h2 {
+    color: #1A3C34;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.calendar-header p {
+    color: #6c757d;
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .calendar-section {
+        padding: 4rem 0;
+    }
+    
+    .calendar-header {
+        margin-bottom: 4rem;
+    }
+    
+    .calendar-header h2 {
+        font-size: 2rem;
+    }
+    
+    .calendar-header p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        padding: 0;
+    }
+}
+
+/* Year-round produce section */
+.year-round-section {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.year-round-section h3 {
+    color: #1A3C34;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.year-round-section > p {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.year-round-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .year-round-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .year-round-section {
+        border-radius: 20px;
+        padding: 3rem;
+        margin-bottom: 4rem;
+    }
+    
+    .year-round-section h3 {
+        font-size: 2rem;
+    }
+    
+    .year-round-section > p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .year-round-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+}
+
+.produce-category {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 2px solid #E8F5E8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produce-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(26, 60, 52, 0.15);
+}
+
+.produce-category h4 {
+    color: #1A3C34;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.produce-category p {
+    color: #6c757d;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 1024px) {
+    .produce-category {
+        padding: 2rem;
+    }
+    
+    .produce-category h4 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .produce-category p {
+        font-size: 1rem;
+    }
+}
+
+.year-round-links {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.year-round-links .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 140px;
+}
+
+.year-round-links .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 60, 52, 0.2);
+    text-decoration: none;
+}
+
+/* Season selector */
+.season-selector {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.season-selector h3 {
+    color: #1A3C34;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.season-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+    .season-tabs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .season-selector {
+        border-radius: 20px;
+        padding: 3rem;
+        margin-bottom: 3rem;
+    }
+    
+    .season-selector h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .season-tabs {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        max-width: 900px;
+    }
+}
+
+.season-tab {
+    background: white;
+    border: 3px solid #E8F5E8;
+    border-radius: 15px;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.season-tab::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+.season-tab:hover::before {
+    left: 100%;
+}
+
+.season-tab:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(26, 60, 52, 0.15);
+}
+
+.season-tab.active {
+    border-color: #1A3C34;
+    background: linear-gradient(135deg, #1A3C34 0%, #2d5a4f 100%);
+    color: white;
+    box-shadow: 0 10px 30px rgba(26, 60, 52, 0.3);
+}
+
+.season-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.season-name {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.season-months {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+@media (min-width: 1024px) {
+    .season-tab {
+        padding: 2rem 1.5rem;
+    }
+    
+    .season-icon {
+        font-size: 2rem;
+    }
+    
+    .season-name {
+        font-size: 1.2rem;
+    }
+    
+    .season-months {
+        font-size: 0.9rem;
+    }
+}
+
+/* Month selector */
+.month-selector {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.month-selector h3 {
+    color: #1A3C34;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .month-selector {
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    .month-selector h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobile-first month tabs */
+.month-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 600px) {
+    .month-tabs {
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+.month-tab {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #1A3C34;
+    background: white;
+    color: #1A3C34;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    flex: 1;
+    min-width: 80px;
+}
+
+.month-tab::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+.month-tab:hover::before {
+    left: 100%;
+}
+
+.month-tab:hover {
+    background: #1A3C34;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 60, 52, 0.3);
+}
+
+.month-tab.active {
+    background: #1A3C34;
+    color: white;
+    box-shadow: 0 5px 15px rgba(26, 60, 52, 0.3);
+}
+
+@media (min-width: 600px) {
+    .month-tab {
+        flex: 0 0 auto;
+        min-width: auto;
+    }
+}
+
+/* Mobile-first seasonal display */
+.seasonal-display {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.produce-categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .produce-categories {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .seasonal-display {
+        border-radius: 20px;
+        padding: 3rem;
+        margin-bottom: 4rem;
+    }
+    
+    .produce-categories {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3rem;
+    }
+}
+
+.produce-category {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 2px solid #E8F5E8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produce-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(26, 60, 52, 0.15);
+}
+
+.produce-category h4 {
+    color: #1A3C34;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 2px solid #E8F5E8;
+    padding-bottom: 0.75rem;
+}
+
+@media (min-width: 1024px) {
+    .produce-category {
+        padding: 2rem;
+    }
+    
+    .produce-category h4 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.produce-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-height: 150px;
+}
+
+@media (min-width: 1024px) {
+    .produce-items {
+        min-height: 200px;
+    }
+}
+
+.produce-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.produce-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #1A3C34;
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.produce-item:hover::before {
+    transform: scaleY(1);
+}
+
+.produce-item:hover {
+    background: #f8f9fa;
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(26, 60, 52, 0.1);
+}
+
+.produce-name {
+    color: #1A3C34;
+    font-weight: 500;
+    font-size: 0.95rem;
+    flex: 1;
+}
+
+.produce-item-link {
+    background: #1A3C34;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.produce-item-link:hover {
+    background: #2d5a4f;
+    transform: scale(1.05);
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+}
+
+/* Empty and loading states */
+.empty-produce {
+    text-align: center;
+    padding: 2rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+.loading-state {
+    text-align: center;
+    padding: 2rem;
+    color: #6c757d;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #1A3C34;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error-state {
+    text-align: center;
+    padding: 2rem;
+    color: #dc3545;
+}
+
+/* Mobile-first shop links section */
+.shop-links {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.shop-links h3 {
+    color: #1A3C34;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.shop-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.shop-buttons .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    min-width: 100%;
+}
+
+@media (min-width: 600px) {
+    .shop-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 600px;
+    }
+    
+    .shop-buttons .btn {
+        min-width: 200px;
+        flex: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .shop-links {
+        border-radius: 20px;
+        padding: 3rem;
+    }
+    
+    .shop-links h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .shop-buttons {
+        max-width: 800px;
+    }
+    
+    .shop-buttons .btn {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+.shop-buttons .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(26, 60, 52, 0.2);
+}
+
+/* Mobile-first touch optimizations */
+.season-tab {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.month-tab {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produce-item {
+    min-height: 60px;
+    padding: 1.25rem;
+}
+
+.produce-item-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-buttons .btn {
+    min-height: 48px;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .season-tab {
+        min-height: auto;
+    }
+    
+    .month-tab {
+        min-height: auto;
+    }
+    
+    .produce-item {
+        min-height: auto;
+        padding: 1rem;
+    }
+    
+    .produce-item-link {
+        min-height: auto;
+    }
+    
+    .shop-buttons .btn {
+        min-height: auto;
+        font-size: 1rem;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .season-tab:hover {
+        transform: none;
+    }
+    
+    .season-tab:active {
+        transform: scale(0.95);
+    }
+    
+    .month-tab:hover {
+        transform: none;
+    }
+    
+    .month-tab:active {
+        transform: scale(0.95);
+    }
+    
+    .produce-item:hover {
+        transform: none;
+    }
+    
+    .produce-item:active {
+        transform: translateX(2px);
+    }
+} 
